@@ -6,8 +6,12 @@ package com.design.builder;
  */
 public class Main {
     public static void main(String[] args) {
+        /*Builder builder = new ConcreteBuilder();
+        Director1 director = new Director1(builder);
+        Product product = director.construct();
+        System.out.println(product.toString());*/
         Builder builder = new ConcreteBuilder();
-        Director director = new Director(builder);
+        Director2 director = new Director2(builder);
         Product product = director.construct();
         System.out.println(product.toString());
     }
